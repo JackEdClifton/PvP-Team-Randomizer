@@ -35,6 +35,7 @@ namespace RandomTeamPicker {
             this.randomize = new System.Windows.Forms.Button();
             this.teamBlue = new System.Windows.Forms.TextBox();
             this.teamOrange = new System.Windows.Forms.TextBox();
+            this.screenshot = new System.Windows.Forms.Button();
             Title = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
@@ -90,6 +91,28 @@ namespace RandomTeamPicker {
             label3.TabIndex = 7;
             label3.Text = "Orange";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            pictureBox1.Location = new System.Drawing.Point(31, 9);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(100, 62);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            pictureBox2.Location = new System.Drawing.Point(539, 9);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(100, 62);
+            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
+            // 
             // nameInput
             // 
             this.nameInput.AcceptsReturn = true;
@@ -136,27 +159,16 @@ namespace RandomTeamPicker {
             this.teamOrange.Size = new System.Drawing.Size(209, 181);
             this.teamOrange.TabIndex = 6;
             // 
-            // pictureBox1
+            // screenshot
             // 
-            pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            pictureBox1.Location = new System.Drawing.Point(31, 9);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(100, 62);
-            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            pictureBox2.Location = new System.Drawing.Point(539, 9);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new System.Drawing.Size(100, 62);
-            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 10;
-            pictureBox2.TabStop = false;
+            this.screenshot.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.screenshot.Location = new System.Drawing.Point(193, 281);
+            this.screenshot.Name = "screenshot";
+            this.screenshot.Size = new System.Drawing.Size(141, 29);
+            this.screenshot.TabIndex = 11;
+            this.screenshot.Text = "Screenshot";
+            this.screenshot.UseVisualStyleBackColor = true;
+            this.screenshot.Click += new System.EventHandler(this.screenshot_Click);
             // 
             // Window
             // 
@@ -164,6 +176,7 @@ namespace RandomTeamPicker {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(674, 321);
+            this.Controls.Add(this.screenshot);
             this.Controls.Add(pictureBox2);
             this.Controls.Add(label3);
             this.Controls.Add(this.teamOrange);
@@ -193,6 +206,7 @@ namespace RandomTeamPicker {
         private System.Windows.Forms.TextBox nameInput;
         private System.Windows.Forms.TextBox teamBlue;
         private System.Windows.Forms.TextBox teamOrange;
+        private System.Windows.Forms.Button screenshot;
     }
 }
 

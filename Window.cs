@@ -38,5 +38,9 @@ namespace RandomTeamPicker {
                 if (team == 1) { teamOrange.Text += players[0] + Environment.NewLine; }
             }
         }
+
+        private void screenshot_Click(object sender, EventArgs e) {
+            SendKeys.Send("%{PRTSC}");
+        }
     }
 }
